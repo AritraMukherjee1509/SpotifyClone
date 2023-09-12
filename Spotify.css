@@ -1,0 +1,489 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #000000;
+    color: #ffffff;
+    overflow: hidden ;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar {
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem; /* 1rem = 16px */
+    margin-right: 0.5rem;
+}
+
+.main-content {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 2.5rem 0 2.5rem;
+    margin: 0 10px;
+}
+
+.music-player {
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav {
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option {
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option:hover {
+    line-height: 2.5rem;
+    opacity: 1;
+}
+
+.nav-option i {
+    font-size: 1.25rem;
+}
+
+.nav-option a {
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-option img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icons {
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icons i {
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.icons i:hover {
+    opacity: 1;
+}
+
+.box {
+    height: 8rem;
+    background-color: #232323;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+}
+
+.box-p1 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.box-p2 {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.badge {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+
+.dark-badge {
+    background-color: #000;
+    color: #ffffff;
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem;
+    z-index: 10;
+}
+
+.sticky-nav-icons img {
+    margin-left: 0.75rem;
+}
+
+.sticky-nav-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticky-nav-options .nav-item:hover {
+    transform: scale(1.05);
+}
+
+.sticky-nav-options .nav-item {
+    margin-right: 1rem;
+}
+
+@media(max-width: 1000px) {
+    .hide {
+        display: none;
+    }
+}
+
+.card {
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+    /* position: relative; */
+    /* z-index: 3; */
+}
+
+.card:hover {
+    /* z-index: 1; */
+    background-color: #292929;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-info {
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.card div {
+    position: relative;
+    bottom: 153px;
+    left: 95px;
+    /* z-index: 2; */
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background-color: #1ed760;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card div i::before {
+    font-size: 18px;
+}
+
+.footer {
+    height: 300px;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+    padding: 100px 0 40px;
+}
+
+.footer .links {
+    display: flex;
+    margin-right: 2rem;
+    margin-bottom: 50px;
+}
+
+.footer .links .links-card {
+    height: 100%;
+    width: 209px;
+    padding: 0.5rem;
+}
+
+.footer .links .links-card .links-card-tytle {
+    font-weight: 800;
+    font-size: 0.85rem;
+}
+
+.footer .links .links-card .links-card-main {
+    color: #a7a7a7;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+}
+.footer .links .links-card .links-card-main:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+.footer .social {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: end;
+    align-items: start;
+}
+
+.footer .social .i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #292929;
+    margin-right: 1rem;
+}
+
+.footer .social .i:hover {
+    background-color: rgb(114, 114, 114);
+}
+
+.line {
+    width: 100%;
+    opacity: 0.1;
+}
+
+.footer .footer-buttom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer .footer-buttom .bottom-links {
+    display: flex;
+}
+
+.footer .footer-buttom .bottom-links p {
+    margin-right: 20px;
+    color: #a7a7a7;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.footer .footer-buttom .bottom-links p:hover {
+    color: #ffffff;
+}
+
+.footer .footer-buttom .copyright {
+    color: #a7a7a7;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.music-player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album {
+    width: 25%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* padding: 0.25rem; */
+    /* background-color: pink; */
+}
+
+.album .album-items {
+    margin-right: 1rem;
+}
+
+.album .album-img img {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 0.5rem;
+}
+
+.album .singer-song {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.75rem;
+    line-height: 0;
+}
+
+.album .singer-song .song {
+    font-weight: 700; 
+    font-size: 0.85rem;
+}
+
+.album .singer-song .singer {
+    font-size: 0.65rem;
+    opacity: 0.7;
+}
+
+.album .singer-song .singer-song-items:hover {
+    opacity: 1;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+.album .album-icons {
+    display: flex;
+    margin-left: 1rem;
+    justify-content: space-between;
+}
+
+.album .album-icons .img {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 10px;
+    opacity: 0.7;
+}
+
+.album .album-icons .img:hover {
+    opacity: 1;
+}
+
+.player {
+    width: 50%;
+    /* background-color: orange; */
+}
+
+.player-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-control-icon {
+    height: 1rem;
+    margin: 0 2rem;
+    opacity: 0.7;
+}
+
+.player-control-icon:hover {
+    opacity: 1;
+}
+
+.play-btn {
+    opacity: 1;
+    height: 1.75rem;
+}
+
+.playback-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar {
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bb706;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+input[type=range]::-ms-fill-lower {
+	background-color: #5082e0;	
+}
+
+input[type=range]::-moz-range-progress {
+	background-color: #5082e0;	
+}
+
+.control {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: green; */
+}
+
+.control .control-icon {
+    height: 1rem;
+    width: 1rem;
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.control .control-icon:hover {
+    opacity: 1;
+}
+
+.control .sound-bar {
+    width: 8rem;
+    margin-right: 1rem;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.sound-bar::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.sound-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bb706;
+    border-radius: 50%;
+    margin-top: -6px;
+}
